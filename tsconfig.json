@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2017", // Or "es5" for broader compatibility, Next.js handles modern syntax
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true, // Helps with errors from node_modules
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true, // Next.js handles the output
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler", // Recommended for Next.js 13.4+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve", // Important for Next.js
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"] // Assuming your source code is in a 'src' directory
+    }
+    // "rootDir": "src", // Only if all your source code (including pages/app) is under src
+    // and you don't have files like next-env.d.ts at the root.
+    // If using `paths` with `./src/*`, `rootDir` might not be needed
+    // or could conflict if not set up carefully with `include`.
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts", "src/app/product/redux/productSlice.ts", "src/app/product/redux/cartSlice.js",
+    // If you have specific .js files you want TypeScript to check and they are not covered by allowJs implicitly:
+    // "src/**/*.js",
+    // "src/**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules" // Ensures TypeScript doesn't try to compile your dependencies
+  ]
+}
