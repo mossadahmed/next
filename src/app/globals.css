@@ -1,0 +1,25 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "react-datepicker/dist/react-datepicker.css";
+@import "react-datepicker/dist/react-datepicker-cssmodules.css";
+@import "react-toastify/dist/ReactToastify.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'swiper/css';
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
