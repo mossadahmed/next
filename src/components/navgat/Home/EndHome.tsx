@@ -108,7 +108,8 @@ export default function EndHome() {
                     </div>
                   </div>
                 </div>
-                <div className='d-flex justify-content-start pt-4 '>           <Button variant="outline-info" className=' rounded-5 text-h-light'>Learn More {'>'}</Button>
+                <div className='d-flex justify-content-start pt-4 '>   
+                          <Button variant="outline-info" className=' rounded-5 text-h-light'>Learn More </Button>
                 </div>
 
               </Col>
@@ -197,7 +198,7 @@ export default function EndHome() {
                   </div>
                 </div>
                 <div className='d-flex justify-content-start pt-4 '>     
-                             <Button variant="outline-info" className=' rounded-5 text-h-light'>Learn More {'>'}</Button>
+                             <Button variant="outline-info" className=' rounded-5 text-h-light'>Learn More </Button>
                 </div>
 
               </Col>
@@ -266,7 +267,7 @@ export default function EndHome() {
                   </div>
                 </div>
                 <div className='d-flex justify-content-start pt-4 '>
-                  <Button variant="btn outline-info" className=' rounded-5 text-h-light'>Learn More <span className='text'> {'>'} </span> </Button>
+                  <Button variant="btn outline-info" className=' rounded-5 text-h-light'>Learn More <span className='text'>  </span> </Button>
                 </div>
 
               </Col>
@@ -330,7 +331,7 @@ export default function EndHome() {
                   </div>
                 </div>
                 <div className='d-flex justify-content-start pt-4 '>
-                  <Button variant="btn outline-info" className=' rounded-5 text-h-light'>Learn More <span className='text'> {'>'} </span> </Button>
+                  <Button variant="btn outline-info" className=' rounded-5 text-h-light'>Learn More <span className='text'>  </span> </Button>
                 </div>
 
               </Col>
