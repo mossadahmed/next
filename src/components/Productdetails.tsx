@@ -11,7 +11,7 @@ type Props = {
   id: number;
 };
 
-export default function Product({
+export default function Productdetails({
   image,
   title,
   price,

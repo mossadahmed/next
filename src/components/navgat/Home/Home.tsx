@@ -2,14 +2,14 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import ListIcons from './ListIcons';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '@/app/product/redux/productSlice';
+import { fetchProducts } from '@/app/redux/productSlice';
 import { useEffect } from 'react';
-import { AppDispatch, RootState } from '@/app/product/redux/store';
+import { AppDispatch, RootState } from '@/app/redux/store';
 import Link from 'next/link';
 import ListIcon from './ListIcon';
 import ThreeImg from './ThreeImg';
 import EndHome from './EndHome';
-import Product from '@/app/product/page';
+import Product from '@/components/Productdetails';
 
 export default function Home() {
     const { items, loading, error } = useSelector((state: RootState) => state.products);

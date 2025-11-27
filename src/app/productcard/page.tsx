@@ -1,13 +1,13 @@
 'use client';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../product/redux/store';
+import { RootState } from '../redux/store';
 import {
     incrementQuantity,
     decrementQuantity,
     cleacard,
     deleteCart,
-} from '../product/redux/cardSlice';
+} from '../redux/cardSlice';
 import { Button, Card, Container, Row, Col, Image } from 'react-bootstrap';
 import { FaTrash } from 'react-icons/fa';
 
@@ -20,7 +20,7 @@ export default function BasketPage() {
     if (cart.length === 0) {
         return (
             <Container className="py-5 text-center">
-                <h3>🛒 السلة فارغة</h3>
+                <h3>🛒</h3>
             </Container>
         );
     }
@@ -83,7 +83,7 @@ export default function BasketPage() {
             </Row>
 
             <div className="text-end mt-4">
-                <h4>الإجمالي: ${totalPrice.toFixed(2)}</h4>
+                <h4>Total: ${totalPrice.toFixed(2)}</h4>
                 <Button variant="success"></Button>
             </div>
         </Container>

@@ -10,12 +10,11 @@ import { CiLogin } from "react-icons/ci";
 import "./NaveBary.css";
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
-import { RootState } from '@/app/product/redux/store';
+import { RootState } from '@/app/redux/store';
 export default function NaveBary() {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
   const cardlength = useSelector((state: RootState) => state.card.length);
-
   return (
     <div>
       <Navbar data-bs-theme="light" className='flex justify-content-around align-items-center'>

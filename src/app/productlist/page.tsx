@@ -1,13 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../product/redux/productSlice';
-import { AppDispatch, RootState } from '../product/redux/store';
+import { fetchProducts } from '../redux/productSlice';
+import { AppDispatch, RootState } from '../redux/store';
 import { Container, Row, Col } from 'react-bootstrap';
 import SwiperProduct from './slise/page';
 import { CiHeart } from 'react-icons/ci';
 import { SlBasket } from 'react-icons/sl';
-import { addToCart } from '../product/redux/cardSlice';
+import { addToCart } from '../redux/cardSlice';
 import Link from 'next/link';
 
 export default function ProductLest() {
