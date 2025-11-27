@@ -3,7 +3,7 @@
 
 import { ReactNode, useEffect, useState } from 'react';
 import axios from 'axios';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import {
   Container, Row, Col, Button, Badge, Spinner, Card
 } from 'react-bootstrap';
@@ -11,8 +11,9 @@ import {
   FaShoppingCart, FaHeart, FaShareAlt, FaArrowLeft, FaStar, FaStarHalfAlt, FaRegStar
 } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
-import { AppDispatch } from '@/app/redux/store'; 
-import { addToCart } from '@/app/redux/cardSlice'; 
+import { AppDispatch } from '@/app/redux/store';
+import { addToCart } from '@/app/redux/cardSlice';
+import React from 'react';
 
 interface Product {
   description: ReactNode;
@@ -27,13 +28,12 @@ interface Product {
   };
 }
 
-export default function Page() {
+export default function Page({ params }: { params: Promise<{ id: string }> }) {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
   const dispatch: AppDispatch = useDispatch();
   const router = useRouter();
-  const params = useParams();
-  const id = params.id;
+  const { id } = React.use(params);
 
   useEffect(() => {
     if (!id) return;
